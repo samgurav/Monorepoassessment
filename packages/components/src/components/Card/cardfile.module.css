@@ -1,0 +1,43 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 400px;
+    background-color: aliceblue;
+    align-items: center;
+    border: 1px solid gray;
+    box-shadow: '2px 2px 4px rgba(0, 0, 0, 0.2)',
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .image{
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+  }
+  .header{
+    font-size: 20px;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

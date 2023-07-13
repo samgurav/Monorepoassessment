@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "0.0.0",
+  "name": "pockedex",
+  "devDependencies": {
+    "lerna": "^7.1.1"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "bootstrap": "npm install",
+    "start": "lerna run --scope pockedex-app --stream dev",
+    "test": "lerna run --scope pockedex-app --stream test",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
