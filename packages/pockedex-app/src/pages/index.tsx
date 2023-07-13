@@ -44,7 +44,9 @@ export default function Home() {
   const pokemonCount = useSelector(selectCount);
 
   const RedirectToDetailPage = (row: Row) => {
-    router.push(`/${row?.name}`);
+    if(row?.name){
+      router.push(`/${row?.name}`);
+    }
   };
 
   return (

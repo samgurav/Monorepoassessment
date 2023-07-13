@@ -22,11 +22,12 @@ type Row = {
   };
 const PokemonDetail = () => {
   const data=useSelector(selectPokemonDetailData) as Detail
+  const router = useRouter()
 
   return (
     <div>
      <h1 className={styles.header}>POKEMON DETAIL PAGE</h1>
-     <button className={styles.button} ><Link href='/'>Back to previous page</Link></button>
+     <button className={styles.button} onClick={()=>router.back()}>Back to previous page</button>
      <div className={styles.card}>
 
      <POkemonCard name={data?.name} height={data?.height} weight={data?.weight} location="mumbai" abilities={data?.abilities}/>
